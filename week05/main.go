@@ -1,28 +1,11 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"log"
-	"os"
-	"strconv"
-	"strings"
+	"math/rand"
 )
 
 func main() {
-	fmt.Print("Input score:")
-	reader := bufio.NewReader(os.Stdin)
-	inputScore, err := reader.ReadString('\n')
-	if err != nil {
-		log.Fatal(err)
-	}
-	inputScore = strings.TrimSpace(inputScore)
-	score, err := strconv.ParseInt(inputScore, 32)
-	if score >= 90 {
-		grade := "A grade"
-	} else {
-		grade := "under A grade"
-	}
-	fmt.Println(inputScore)
-	fmt.Println("You will get", grade)
+	dice := rand.Intn(6) + 1
+	fmt.Println(dice)
 }
