@@ -2,12 +2,13 @@ package main
 
 import (
 	"fmt"
-	"time"
+	"strings"
 )
 
 func main() {
-	var now time.Time = time.Now()
-	var year int = now.Year()
-	month := now.Month()
-	fmt.Println(year, month)
+	brokenWords := "I love H#eningkai"
+	replaceWords := strings.NewReplacer("#", "u")
+	fixedWords := replaceWords.Replace(brokenWords)
+	fmt.Println(fixedWords)
+
 }
