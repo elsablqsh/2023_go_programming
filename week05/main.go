@@ -16,7 +16,6 @@ func main() {
 	answer := rand.Intn(100) + 1 //1~100
 
 	fmt.Println("Guess Game (1~100) : ")
-	fmt.Println(answer)
 
 	reader := bufio.NewReader(os.Stdin)
 
