@@ -9,5 +9,7 @@ func main() {
 
 	fmt.Println(&a, a)
 	fmt.Println(pa, *pa)
+	fmt.Println(&pa)
+	fmt.Println("%T %T\n", a, pa)
 
 }
