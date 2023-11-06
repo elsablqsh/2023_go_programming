@@ -14,4 +14,18 @@ func main() {
 	for i := 0; i < 3; i++ {
 		fmt.Println(primes[i])
 	}
+
+	test := [5]bool{true, true, true}
+	fmt.Println(test[3]) // zero value
+	fmt.Println(test)
+	// fmt.Println(test[5]) invalid argument : index 5 out of bounds [0:5]
+
+	fmt.Printf("%#v\n", primes)
+	fmt.Printf("%#v\n", test)
+
+	i := 0
+	for i < 6 { // while
+		fmt.Println(test[i])
+		i++
+	}
 }
