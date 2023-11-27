@@ -2,11 +2,15 @@ package main
 
 import "fmt"
 
+func status(name string) {
+	balls := map[string]int{"elsa": 27, "su": 0}
+	//ball := balls[name]
+	ball, exists := balls[name]
+	fmt.Println(ball, exists)
+}
+
 func main() {
-	//balls := make(map[string]int)
-	var balls map[string]int
-	fmt.Printf("%#v\n", balls)
-	balls["elsa"] = 27
-	fmt.Println(balls["elsa"])
-	fmt.Println(balls["su"])
+	status("elsa")
+	status("su")
+	status("kamal")
 }
