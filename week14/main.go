@@ -6,13 +6,13 @@ func main() {
 	//var games map[int]string
 	// games = make(map[int]string)
 
-	games := make(map[int]string)
+	games := map[int]string{
+		427: "elsa",
+		251: "su",
+		108: "kamal",
+		106: "victor",
+		408: "yujin"}
 	// append
-	games[427] = "elsa"
-	games[251] = "su"
-	games[108] = "kamal"
-	games[106] = "victor"
-	games[408] = "yujin"
 
 	for _, v := range games {
 		fmt.Println(v)
